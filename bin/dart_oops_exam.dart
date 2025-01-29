@@ -55,6 +55,7 @@ class Circle extends Shape {
   Circle(this._radius, super._color);
 
   double get radius => _radius;
+  set radius(double newRadius) => _radius = newRadius;
 
   displayProperties() {
     displayColor();
@@ -67,6 +68,8 @@ class Rectangle extends Shape {
   double _breath;
 
   Rectangle(this._length, this._breath, super._color);
+  set length(double newLength) => _length = newLength;
+  set breath(double newBreath) => _breath = newBreath;
 
   double get legeth => _length;
   double get breath => _breath;
